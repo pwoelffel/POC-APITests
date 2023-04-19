@@ -4,8 +4,8 @@
   "description": "",
   "main": "api.js",
   "scripts": {
-    "start": "nodemon index.js --exec \"npm run lint && node\"",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js --exec \"npm run lint && node\"",
+    "test": "jest --detectOpenHandles --coverage --coverageDirectory=tests/coverage",
     "lint": "standard --fix"
   },
   "author": "",
@@ -18,7 +18,7 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "jsonwebtoken": "^8.5.1",
-    "mysql2": "^2.3.3",
+    "mysql2": "^3.2.3",
     "nodemon": "^2.0.20",
     "sequelize": "^6.31.0",
     "sequelize-auto": "^0.8.8",
@@ -26,7 +26,12 @@
   },
   "standard": {
     "ignore": [
-      "/models/*"
+      "/models/*",
+      "/tests/*"
     ]
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3"
   }
 }
