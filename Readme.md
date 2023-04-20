@@ -2,10 +2,10 @@
 
 ## Sommaire
 
- - ### [Jest](#jest)
- - ### [SuperTest](#supertest)
- - ### [POC](#poc)
- - ### [Tests](#tests)
+ - [Jest](#jest)
+ - [SuperTest](#supertest)
+ - [POC](#poc)
+ - [Tests](#tests)
 
 ## Jest
 
